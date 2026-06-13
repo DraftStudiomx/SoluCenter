@@ -856,10 +856,17 @@
   <div class="container">
     <div class="section-head reveal">
       <h2 class="section-h2" id="catalogo-h2">Catálogo de productos</h2>
-      <p class="section-sub">Filtra por tipo o presentación y cotiza directo por WhatsApp. Sin formularios y sin vueltas: nos dices qué proyecto traes y te decimos cuánto necesitas.</p>
+      <p class="section-sub">Filtra por marca, tipo o presentación y cotiza directo por WhatsApp. Sin formularios y sin vueltas: nos dices qué proyecto traes y te decimos cuánto necesitas.</p>
     </div>
 
     <div class="filters reveal" role="group" aria-label="Filtros del catálogo">
+      <div class="filters__row" role="group" aria-label="Filtrar por marca">
+        <span class="filters__label">Marca:</span>
+        <button class="fbtn" data-group="brand" data-filter="all" aria-pressed="true">Todas</button>
+        <button class="fbtn" data-group="brand" data-filter="Berel" aria-pressed="false">Berel</button>
+        <button class="fbtn" data-group="brand" data-filter="Sika" aria-pressed="false">Sika</button>
+        <button class="fbtn" data-group="brand" data-filter="Montana" aria-pressed="false">Montana Colors</button>
+      </div>
       <div class="filters__row" role="group" aria-label="Filtrar por tipo">
         <span class="filters__label">Tipo:</span>
         <button class="fbtn" data-group="type" data-filter="all" aria-pressed="true">Todo</button>
@@ -880,7 +887,7 @@
 
     <div class="products" id="productsGrid">
 
-      <article class="pcard reveal" data-type="vinilica" data-pres="cubeta 4l">
+      <article class="pcard reveal" data-type="vinilica" data-brand="Berel" data-pres="cubeta 4l">
         <div class="pcard__band" style="background:#9DB4C8;"></div>
         <div class="pcard__body">
           <span class="pcard__type">Vinílica</span>
@@ -891,7 +898,7 @@
         </div>
       </article>
 
-      <article class="pcard reveal" data-type="vinilica" data-pres="cubeta 4l">
+      <article class="pcard reveal" data-type="vinilica" data-brand="Berel" data-pres="cubeta 4l">
         <div class="pcard__band" style="background:#7BA7BC;"></div>
         <div class="pcard__body">
           <span class="pcard__type">Vinílica</span>
@@ -902,7 +909,7 @@
         </div>
       </article>
 
-      <article class="pcard reveal" data-type="vinilica" data-pres="cubeta 4l 1l">
+      <article class="pcard reveal" data-type="vinilica" data-brand="Berel" data-pres="cubeta 4l 1l">
         <div class="pcard__band" style="background:#4A6FA5;"></div>
         <div class="pcard__body">
           <span class="pcard__type">Vinílica</span>
@@ -913,7 +920,7 @@
         </div>
       </article>
 
-      <article class="pcard reveal" data-type="vinilica" data-pres="cubeta 4l">
+      <article class="pcard reveal" data-type="vinilica" data-brand="Berel" data-pres="cubeta 4l">
         <div class="pcard__band" style="background:linear-gradient(90deg,#B8543A,#D4A832,#4A7C59,#4A6FA5);"></div>
         <div class="pcard__body">
           <span class="pcard__type">Vinílica</span>
@@ -924,7 +931,7 @@
         </div>
       </article>
 
-      <article class="pcard reveal" data-type="impermeabilizante" data-pres="cubeta 4l">
+      <article class="pcard reveal" data-type="impermeabilizante" data-brand="Sika" data-pres="cubeta 4l">
         <div class="pcard__band" style="background:#F2F0EC;"></div>
         <div class="pcard__body">
           <span class="pcard__type">Impermeabilizante</span>
@@ -935,7 +942,7 @@
         </div>
       </article>
 
-      <article class="pcard reveal" data-type="impermeabilizante" data-pres="cubeta 4l">
+      <article class="pcard reveal" data-type="impermeabilizante" data-brand="Sika" data-pres="cubeta 4l">
         <div class="pcard__band" style="background:#9E3B2B;"></div>
         <div class="pcard__body">
           <span class="pcard__type">Impermeabilizante</span>
@@ -946,7 +953,7 @@
         </div>
       </article>
 
-      <article class="pcard reveal" data-type="esmalte" data-pres="cubeta 4l 1l">
+      <article class="pcard reveal" data-type="esmalte" data-brand="Berel" data-pres="cubeta 4l 1l">
         <div class="pcard__band" style="background:#F8F6F2;"></div>
         <div class="pcard__body">
           <span class="pcard__type">Esmalte</span>
@@ -957,7 +964,7 @@
         </div>
       </article>
 
-      <article class="pcard reveal" data-type="esmalte" data-pres="cubeta 4l">
+      <article class="pcard reveal" data-type="esmalte" data-brand="Berel" data-pres="cubeta 4l">
         <div class="pcard__band" style="background:#1F1D1B;"></div>
         <div class="pcard__body">
           <span class="pcard__type">Esmalte</span>
@@ -968,7 +975,7 @@
         </div>
       </article>
 
-      <article class="pcard reveal" data-type="esmalte" data-pres="4l">
+      <article class="pcard reveal" data-type="esmalte" data-brand="Berel" data-pres="4l">
         <div class="pcard__band" style="background:#33302D;"></div>
         <div class="pcard__body">
           <span class="pcard__type">Esmalte</span>
@@ -979,7 +986,7 @@
         </div>
       </article>
 
-      <article class="pcard reveal" data-type="preparacion" data-pres="4l">
+      <article class="pcard reveal" data-type="preparacion" data-brand="Berel" data-pres="4l">
         <div class="pcard__band" style="background:#E5E0D8;"></div>
         <div class="pcard__body">
           <span class="pcard__type">Preparación</span>
@@ -990,7 +997,7 @@
         </div>
       </article>
 
-      <article class="pcard reveal" data-type="preparacion" data-pres="cubeta">
+      <article class="pcard reveal" data-type="preparacion" data-brand="Berel" data-pres="cubeta">
         <div class="pcard__band" style="background:#C9C2B6;"></div>
         <div class="pcard__body">
           <span class="pcard__type">Preparación</span>
@@ -1001,7 +1008,7 @@
         </div>
       </article>
 
-      <article class="pcard reveal" data-type="preparacion" data-pres="1l">
+      <article class="pcard reveal" data-type="preparacion" data-brand="Berel" data-pres="1l">
         <div class="pcard__band" style="background:#B8C4CC;"></div>
         <div class="pcard__body">
           <span class="pcard__type">Preparación</span>
@@ -1012,7 +1019,7 @@
         </div>
       </article>
 
-      <article class="pcard reveal" data-type="aerosol" data-pres="aerosol">
+      <article class="pcard reveal" data-type="aerosol" data-brand="Montana" data-pres="aerosol">
         <div class="pcard__band" style="background:linear-gradient(90deg,#F57C20,#E8B021,#3E8E5A,#2C4A7C,#1A1A1A);"></div>
         <div class="pcard__body">
           <span class="pcard__type">Aerosol</span>
@@ -1212,14 +1219,15 @@
   /* ── Filtros del catálogo ────────────────────────────────────────── */
   const cards = Array.from(document.querySelectorAll('#productsGrid .pcard'));
   const emptyMsg = document.getElementById('productsEmpty');
-  const active = { type: 'all', pres: 'all' };
+  const active = { brand: 'all', type: 'all', pres: 'all' };
 
   function applyFilters() {
     let visible = 0;
     cards.forEach(card => {
+      const okBrand = active.brand === 'all' || card.dataset.brand === active.brand;
       const okType = active.type === 'all' || card.dataset.type === active.type;
       const okPres = active.pres === 'all' || card.dataset.pres.split(' ').includes(active.pres);
-      const show = okType && okPres;
+      const show = okBrand && okType && okPres;
       card.classList.toggle('hidden', !show);
       if (show) visible++;
     });
@@ -1241,6 +1249,7 @@
   /* Categorías → filtran el catálogo y bajan a él */
   document.querySelectorAll('.catcard[data-cat]').forEach(card => {
     card.addEventListener('click', () => {
+      setFilter('brand', 'all');
       setFilter('pres', 'all');
       setFilter('type', card.dataset.cat);
     });
