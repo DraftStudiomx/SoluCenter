@@ -1,0 +1,12 @@
+# Documentos internos / confidenciales (NO publicar)
+Cotizacion-Solucenter-Web.pdf
+PRODUCT.md
+solucenter-sample.html
+
+# Config local del entorno
+.claude/
+
+# Sistema
+Thumbs.db
+.DS_Store
+desktop.ini
