@@ -26,11 +26,11 @@
   <meta name="twitter:description" content="Vinílicas, impermeabilizantes, esmaltes y aerosoles. Berel, Sika y Montana Colors. Igualamos cualquier color. Cotiza por WhatsApp.">
   <meta name="twitter:image" content="https://solucenter.com.mx/assets/og-image.jpg">
 
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23ffffff'/%3E%3Ctext x='4' y='48' font-family='Arial Black, Arial, sans-serif' font-weight='900' font-size='40' fill='%23F57C20'%3ES%3C/text%3E%3Ctext x='31' y='48' font-family='Arial Black, Arial, sans-serif' font-weight='900' font-size='40' fill='%231A1A1A'%3EC%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%231A1A1A'/%3E%3Ctext x='6' y='47' font-family='Arial Black, Arial, sans-serif' font-weight='900' font-size='38' fill='%23F57C20'%3ES%3C/text%3E%3Ctext x='32' y='47' font-family='Arial Black, Arial, sans-serif' font-weight='900' font-size='38' fill='%23ffffff'%3EC%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Datos estructurados: negocio local -->
   <script type="application/ld+json">
@@ -175,7 +175,17 @@
       gap: 24px;
     }
     .brand { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
-    .brand__mono { height: 38px; width: auto; flex-shrink: 0; }
+    .brand__mono {
+      font-family: 'Anton', 'Arial Narrow', sans-serif;
+      font-size: 1.95rem;
+      line-height: 0.8;
+      letter-spacing: -0.02em;
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .brand__mono .s { color: var(--orange); }
+    .brand__mono .c { color: var(--ink); margin-left: -0.07em; }
     .brand__text { display: flex; flex-direction: column; line-height: 1; }
     .brand__name {
       font-family: var(--font-head);
@@ -696,6 +706,8 @@
       gap: 26px;
     }
     .footer .brand__name { color: #fff; }
+    .footer .brand__name b { color: var(--orange); }
+    .footer .brand__mono .c { color: #fff; }
     .footer .brand__tag { color: rgba(255,255,255,0.55); }
     .footer__links { display: flex; flex-wrap: wrap; gap: 4px 18px; }
     .footer__links a { font-weight: 600; font-size: 0.9rem; }
@@ -730,11 +742,7 @@
 <nav class="nav" aria-label="Navegación principal">
   <div class="nav__inner">
     <a class="brand" href="#inicio" aria-label="Solucenter, inicio">
-      <!-- Monogram SC: recreación vectorial del logo impreso (S naranja, C negra, sin caja) -->
-      <svg class="brand__mono" viewBox="0 0 72 52" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <text x="2" y="45" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="900" font-size="54" fill="#F57C20">S</text>
-        <text x="36" y="45" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="900" font-size="54" fill="#1A1A1A">C</text>
-      </svg>
+      <span class="brand__mono" aria-hidden="true"><span class="s">S</span><span class="c">C</span></span>
       <span class="brand__text">
         <span class="brand__name"><b>SOLU</b>CENTER</span>
         <span class="brand__tag">Soluciones de Construcción</span>
@@ -1171,10 +1179,7 @@
 <footer class="footer">
   <div class="container footer__inner">
     <a class="brand" href="#inicio" aria-label="Solucenter, volver al inicio">
-      <svg class="brand__mono" viewBox="0 0 72 52" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <text x="2" y="45" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="900" font-size="54" fill="#F57C20">S</text>
-        <text x="36" y="45" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="900" font-size="54" fill="#FFFFFF">C</text>
-      </svg>
+      <span class="brand__mono" aria-hidden="true"><span class="s">S</span><span class="c">C</span></span>
       <span class="brand__text">
         <span class="brand__name"><b>SOLU</b>CENTER</span>
         <span class="brand__tag">Soluciones de Construcción</span>
