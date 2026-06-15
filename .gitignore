@@ -3,12 +3,12 @@ Cotizacion-Solucenter-Web.pdf
 PRODUCT.md
 solucenter-sample.html
 
-# Material fuente de marca y maquetas en proceso (no para el sitio público)
+# Material fuente de marca (no para el sitio público)
 Solucenter Logo/
-index-v2.html
 
 # Config local del entorno
 .claude/
+.vscode/
 
 # Sistema
 Thumbs.db
